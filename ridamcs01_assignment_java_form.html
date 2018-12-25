@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Assignment
+	</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="container">
+	<form class="col-sm-12" style="margin-left: 20%;">
+		<div class="form-group row">
+		</div>
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label" id="sum" style="border-bottom: 1px solid #ddd"></label>
+    <div class="col-sm-4">
+      <input type="number" class="form-control" id="number1" placeholder="Enter Number 1">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword3" id="sub" class="col-sm-2 col-form-label" style="border-bottom: 1px solid #ddd"></label>
+    <div class="col-sm-4">
+      <input type="number" class="form-control" id="number2" placeholder="Enter Number 2">
+    </div>
+  </div>
+  
+  <div class="form-group row">
+  	    <div class="col-sm-2">
+  	    </div>
+    <div class="col-sm-1">
+      <button type="button" class="btn btn-primary" onclick="sum();">ADD</button>
+    </div>
+     <div class="col-sm-4">
+      <button type="button" class="btn btn-primary" onclick="sub();">SUB</button>
+    </div>
+  </div>
+</form>
+
+
+</div>	
+<script type="text/javascript">
+	function sum() {
+  var y = document.getElementById("number1").value;
+
+  var z = document.getElementById("number2").value;
+  var x = Number(y) + Number(z);
+  document.getElementById("sum").innerHTML = "The Sum is : "+x;
+}
+
+	function sub() {
+  var y = document.getElementById("number1").value;
+  var z = document.getElementById("number2").value;
+  var x = Number(y) - Number(z);
+  document.getElementById("sub").innerHTML = "The Diff is : "+x;
+}
+
+</script>
+
+
+
+</body>
+</html>
